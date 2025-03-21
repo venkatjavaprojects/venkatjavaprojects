@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API Tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke Tests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="RestAssured.RestAssuredPOM.test.UserTest">
+        <methods>
+          <include name="testDeleteUser"/>
+        </methods>
+      </class> <!-- RestAssured.RestAssuredPOM.test.UserTest -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+  <test thread-count="5" name="Sanity Tests(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="RestAssured.RestAssuredPOM.test.UserTest">
+        <methods>
+          <include name="testGetUserByName"/>
+        </methods>
+      </class> <!-- RestAssured.RestAssuredPOM.test.UserTest -->
+    </classes>
+  </test> <!-- Sanity Tests(failed) -->
+</suite> <!-- Failed suite [API Tests] -->
